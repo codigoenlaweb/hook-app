@@ -1,9 +1,10 @@
 import { Fragment } from "react";
+import CounterApp from "./components/CounterApp";
 
 function HookApp() {
   return (
     <Fragment>
-      <h1>michhell te amo</h1>
+      <CounterApp />
     </Fragment>
   );
 }
