@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const UseCounter = (initialState) => {
+const UseCounter = (initialState = 0) => {
   const [counter, setCounter] = useState(initialState);
-
+  
   const increment = () => {
     setCounter(counter + 1);
   };

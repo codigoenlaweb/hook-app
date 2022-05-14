@@ -1,14 +1,11 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useState } from "react";
+import Message from "./Message";
 
 function SimpleForm() {
   const [input, setInput] = useState({
     name: "",
     email: "",
   });
-
-  useEffect(() => {
-    console.log("hey");
-  }, []);
 
   const validForm = ({ target }) => {
     setInput({
@@ -41,6 +38,8 @@ function SimpleForm() {
             placeholder="youremail@gmail.com"
           />
         </form>
+
+        { (input.name === '123') && <Message />}
       </section>
     </Fragment>
   );
